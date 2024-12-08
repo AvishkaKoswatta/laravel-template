@@ -11,7 +11,9 @@ return Application::configure(basePath: dirname(__DIR__))
         health: '/up',
     )
     ->withMiddleware(function (Middleware $middleware) {
-        //
+        $middleware->alias([
+            'redirect_to_login' => \App\Http\Middleware\RedirectToLogin::class,
+        ]);
     })
     ->withExceptions(function (Exceptions $exceptions) {
         //
