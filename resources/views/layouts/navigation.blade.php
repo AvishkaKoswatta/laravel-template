@@ -34,13 +34,13 @@
             <div class="hidden sm:flex sm:items-center sm:ms-6">
     <!-- New Buttons -->
     <button href="{{ route('dashboard') }}" 
-            class="inline-flex items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md text-gray-500 dark:text-gray-400 bg-white hover:text-gray-700 dark:hover:text-gray-300 focus:outline-none transition ease-in-out duration-150 ms-2" 
-            style="background-color:#276aa5;color:#7eac2f;border-radius: 5px;">
+            class="inline-flex items-center px-3 py-2 text-sm leading-4 font-medium rounded-md text-gray-500 dark:text-gray-400 bg-white hover:text-gray-700 dark:hover:text-gray-300 focus:outline-none transition ease-in-out duration-150 ms-2" 
+            style="background-color:#276aa5 !important ;color:#7eac2f;border-radius: 5px;">
         <i class="fas fa-dollar-sign"></i>
     </button>
     <button href="{{ route('dashboard') }}" 
-            class="inline-flex items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md text-gray-500 dark:text-gray-400 bg-white hover:text-gray-700 dark:hover:text-gray-300 focus:outline-none transition ease-in-out duration-150 ms-2" 
-            style="background-color:#276aa5;color:#7eac2f;border-radius: 5px;">
+            class="inline-flex items-center px-3 py-2 text-sm leading-4 font-medium rounded-md text-gray-500 dark:text-gray-400 bg-white hover:text-gray-700 dark:hover:text-gray-300 focus:outline-none transition ease-in-out duration-150 ms-2" 
+            style="background-color:#276aa5 !important ;color:#7eac2f;border-radius: 5px;border: none;">
         <i class="fas fa-gift"></i>
     </button>
 
@@ -76,6 +76,11 @@
         </x-dropdown>
     @else
         <div>
+        <button href="{{ route('dashboard') }}" 
+            class="inline-flex items-center px-3 py-2 text-sm leading-4 font-medium rounded-md text-gray-500 dark:text-gray-400 bg-white hover:text-gray-700 dark:hover:text-gray-300 focus:outline-none transition ease-in-out duration-150 ms-2" 
+            style="background-color:#7eac2f !important ;color:#ffffff !important;border-radius: 5px;">
+            {{ __('Register') }}
+    </button>
             <button class="inline-flex items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md text-gray-500 dark:text-gray-400 bg-white hover:text-gray-700 dark:hover:text-gray-300 focus:outline-none transition ease-in-out duration-150 ms-2" 
                     style="background-color:#276aa5;color:#7eac2f;border-radius: 5px;" 
                     data-bs-toggle="modal" data-bs-target="#loginModal">
